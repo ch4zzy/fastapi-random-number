@@ -33,7 +33,7 @@ jobs:
     needs: test
     steps:
       - name: Trigger deploy on DigitalOcean App Platform
-        uses: digitalocean/app-action@v1.1.3
+        uses: digitalocean/app-deploy-action@v2
         with:
           app-id: ${{ secrets.DO_APP_ID }}
           token: ${{ secrets.DO_API_TOKEN }}
