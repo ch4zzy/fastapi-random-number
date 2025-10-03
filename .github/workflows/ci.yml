@@ -38,5 +38,5 @@ jobs:
       - name: Deploy to DigitalOcean App Platform
         uses: digitalocean/app_action/deploy@v2
         with:
-          app_id: ${{ secrets.DO_APP_ID }}
+          app_name: ${{ secrets.DO_APP_NAME }}
           token: ${{ secrets.DO_API_TOKEN }}
